@@ -18,7 +18,7 @@ function sendEmail() {
         let subject = encodeURIComponent("Message from " + name);
         let body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage: " + message);
 
-        window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:douaa.benhamida8@gmail.com?subject=${subject}&body=${body}`;
     } else {
         alert("Please fill out all fields!");
     }
