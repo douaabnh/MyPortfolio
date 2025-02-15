@@ -24,7 +24,7 @@ body{
 }
 section{
     min-height: auto;
-    padding: 5rem 3%;
+    padding: 0;
     background-color: var(--second-bg-color);
 }
 .header{
@@ -102,11 +102,9 @@ section{
     }
 }
 
-section{
-    min-height: 100vh;
-    padding: 10rem 12% 10rem;
-}
 .home{
+    min-width: 600px;
+    padding: 10rem 12% 10rem;
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -312,7 +310,7 @@ span{
     margin: 5rem 0;
 }
 .education{
-    padding: 80px 10px;
+    padding: 50px 10px;
     background: var(--bg-color);
 }
 .education h2{
@@ -350,26 +348,26 @@ span{
     padding-left: calc(50% + 30px) ;
 }
 .timeline-dot{
-    height: 21px;
-    width: 21px;
+    height: 20px;
+    width: 20px;
     background-color: var(--main-color);
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color);
     position: absolute;
     left: calc(50% - 8px) ;
     border-radius: 50%;
-    top: 10px;
+    top: 3px;
 }
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
     color: white;
-    margin: 6px 0 15px;
+    margin: 2px 0 15px;
 }
 .timeline-content{
     background-color: var(--second-bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 20px 40px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -454,29 +452,31 @@ span{
 
 
 .experience {
-    padding: 5px 1px;
+    max-height: 400px; /* Adjust as needed */
+    overflow: hidden;
+    padding: 5px 1px 30px 1px;
     background: var(--second-bg-color);
-    text-align: center;
+    text-align: center; 
 }
 
 .experience .heading {
     font-size: 5rem;
-    margin-top: 1px;
-    margin-bottom: 4rem;
     color: var(--text-color);
 }
 
 .experience-container {
     display: flex;
+    padding: 10px 0 30px 0;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 7px;
 }
 
 .card {
     width: 300px;
     height: 200px;
     perspective: 1000px;
+    padding: 0 10px;
 }
 
 .card-inner {
@@ -531,3 +531,71 @@ span{
 }
 
 /*certificate*/
+.certificate {
+    margin-top: 0px; /* Reduce the top margin */
+    padding: 0;
+}
+
+/*extracurricular*/
+.extracurricular {
+    background: var(--bg-color);
+    padding: 5px 12%;
+    text-align: center;
+}
+
+.extracurricular .heading {
+    font-size: 5rem;
+    margin-bottom: 50px;
+    color: var(--text-color);
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.activity-card {
+    background: var(--second-bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px var(--main-color);
+}
+.activity-card img{
+    height: 30%;
+    margin: 10px;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.activity-card i {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.activity-card h3 {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.activity-card h4 {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    font-size: 15px;
+    color: #ddd;
+    line-height: 2;
+}
