@@ -538,6 +538,9 @@ span{
     background: var(--main-color);
     color: var(--second-bg-color);
 }
+.card-back p{
+    font-weight: bold;
+}
 
 /*certificate*/
 .certificate {
